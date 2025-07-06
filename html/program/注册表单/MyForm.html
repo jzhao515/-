@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="作者" content="赵嘉炜">
+        <title>注册表单</title>
+    </head>
+    <body>
+        <header>
+            <h1>用户注册</h1>
+        </header>
+
+        <main>
+            <form action="./submit" method="post" target="_blank">
+                <p>
+                    <label for="username">用户名:</label>
+                    <input type="text" name="username" id="username" placeholder="请输入用户名" required/>
+                </p>
+
+                <p>
+                    <label>性别:</label>
+                    <input type="radio" name="gender" value="male" id="male" checked/>
+                    <label for="male">男</label>
+                    <input type="radio" name="gender" value="female" id="female" />
+                    <label for="female">女</label>
+                </p>
+
+                <p>
+                    <label>生日：</label>
+                    <label for="year">年</label>
+                    <select name="year" id="year">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                    </select>
+
+                    <label for="month">月</label>
+                    <select name="month" id="month">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="email">邮箱</label>
+                    <input type="email" name="email" id="email" placeholder="请输入邮箱" required/>
+                </p>
+
+                <p>
+                    <label for="password">密码</label>
+                    <input type="password" name="password" id="password" placeholder="请输入密码" required/>
+                </p>
+
+                <p>
+                    <label for="description">个人描述</label><br>
+                    <textarea name="description" id="description" rows="4" cols="30" placeholder="个人陈述"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="agree" required/>我同意条款
+                </p>
+
+                <p>
+                    <button type="submit">提交注册</button>
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
